@@ -17,6 +17,6 @@ const OmentalFramework = NativeModules.OmentalFramework
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return OmentalFramework.multiply(a, b);
-}
+    export function loadGame(): Promise<string> {
+      return OmentalFramework.loadGame();
+    }

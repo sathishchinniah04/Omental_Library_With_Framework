@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* OmentalFramework.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* OmentalFramework.mm */; };
-		F4FF95D7245B92E800C19C63 /*  OmentalFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  OmentalFramework.swift */; };
+		F4FF95D7245B92E800C19C63 /* OmentalFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* OmentalFramework.swift */; };
+		F516504D2ABACE3900C13E68 /* GamificationFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F516504C2ABACE3900C13E68 /* GamificationFramework.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +28,7 @@
 		B3E7B5891CC2AC0600A0062D /* OmentalFramework.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OmentalFramework.mm; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* OmentalFramework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OmentalFramework-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4FF95D6245B92E800C19C63 /* OmentalFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmentalFramework.swift; sourceTree = "<group>"; };
+		F516504C2ABACE3900C13E68 /* GamificationFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GamificationFramework.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F516504D2ABACE3900C13E68 /* GamificationFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +54,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				F516504C2ABACE3900C13E68 /* GamificationFramework.xcframework */,
 				F4FF95D6245B92E800C19C63 /* OmentalFramework.swift */,
 				B3E7B5891CC2AC0600A0062D /* OmentalFramework.mm */,
 				F4FF95D5245B92E700C19C63 /* OmentalFramework-Bridging-Header.h */,
@@ -117,7 +120,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4FF95D7245B92E800C19C63 /* OmentalFramework.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* OmentalFramework.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
