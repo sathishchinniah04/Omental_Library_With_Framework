@@ -1,4 +1,6 @@
-import { NativeModules, Platform } from 'react-native';
+import { NativeModules, Platform, View, Text } from 'react-native';
+import React from "react";
+import DailyChallenge from './DailyChallenge';
 
 const LINKING_ERROR =
   `The package 'react-native-omental-framework' doesn't seem to be linked. Make sure: \n\n` +
@@ -9,14 +11,23 @@ const LINKING_ERROR =
 const OmentalFramework = NativeModules.OmentalFramework
   ? NativeModules.OmentalFramework
   : new Proxy(
-      {},
-      {
-        get() {
-          throw new Error(LINKING_ERROR);
-        },
-      }
-    );
-
-    export function loadGame(): Promise<string> {
-      return OmentalFramework.loadGame();
+    {},
+    {
+      get() {
+        throw new Error(LINKING_ERROR);
+      },
     }
+  );
+
+function loadGame(): Promise<string> {
+  return OmentalFramework.loadGame();
+}
+
+// function DailyChallenge() {
+//   return <View>
+//     <Text>OLAAAAA</Text>
+//   </View>
+// }
+
+
+export { loadGame, DailyChallenge }
