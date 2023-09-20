@@ -11,11 +11,24 @@ npm install react-native-omental-framework
 ## Usage
 
 ```js
-import { multiply } from 'react-native-omental-framework';
+import { DailyChallenge, loadGame } from 'react-native-omental-framework';
 
 // ...
 
-const result = await multiply(3, 7);
+// To call the the spin and win directly use loadGame function
+loadGame();
+
+
+// To display the daily challenges view use <DailyChallenge> jsx tag
+<DailyChallenge />
+
+
+// Daily Challenges view has 3 onClick functions for the three games diplayed, current for spin and win it will automatically redirects to spin and win game. Please find the example that use the onClick functions
+<DailyChallenge
+    onSpinClick={() => console.log("spin and win clicked")}
+    onLuckyClick={() => console.log("lucky lottery clicked")}
+    onShakeClick={() => console.log("shake and win clicked")}
+/>
 ```
 
 ## Contributing
